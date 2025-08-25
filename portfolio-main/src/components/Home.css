@@ -1,0 +1,124 @@
+/* Home Section Container */
+.home-section {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 48px 20px;
+  text-align: center;
+  color: #e0e6eb;
+}
+
+/* Main heading */
+.home-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+  letter-spacing: 1.1px;
+}
+
+.heading-white {
+  color: #fff;
+}
+
+.heading-purple {
+  color: #bb86fc;
+}
+
+/* Subheading */
+.home-subheading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #bb86fc;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons Container */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+.hero-btn {
+  color: #bb86fc;
+  background: transparent;
+  border: 2px solid #bb86fc;
+  border-radius: 7px;
+  padding: 0.6rem 1.7rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.hero-btn:hover {
+  background-color: #bb86fc;
+  color: #23273a;
+  border-color: #bb86fc;
+}
+
+/* Hero Stats Container */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 1.25rem;
+}
+
+/* Each Stat */
+.hero-stat {
+  text-align: center;
+  color: #aaaebd;
+}
+
+/* Stat Number */
+.hero-stat strong {
+  font-size: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: block;
+  color: #fff;
+}
+
+/* Stat Big text, e.g. "Fresher" */
+.stat-big.heading-purple {
+  color: #bb86fc; /* purple color */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* Stat label text */
+.stat-label {
+  margin-top: 5px;
+  font-weight: 500;
+  display: block;
+  color: #aaaebd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .hero-btn {
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+  }
+  .home-heading {
+    font-size: 2rem;
+  }
+  .home-subheading {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}
+#hii{
+    color: #5a3892; /* purple color */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  font-weight: 600;
+}

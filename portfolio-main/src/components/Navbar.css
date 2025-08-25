@@ -1,0 +1,91 @@
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 54px;
+  height: 54px;
+  background: #6b7684; /* Slight blue-gray shade (matches your icon background) */
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 130;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #111; /* Black-ish lines */
+  border-radius: 2px;
+}
+
+
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.15);
+  color: #000;
+}
+
+
+/* Bottom Icon Bar */
+.bottom-menu {
+  position: fixed;
+  bottom: -80px; /* hidden initially */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-radius: 40px;
+  padding: 10px 20px;
+  display: flex;
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 119;
+}
+
+.bottom-menu.open {
+  bottom: 20px; /* visible when open */
+  opacity: 1;
+  pointer-events: all;
+}
+
+.bottom-menu ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.bottom-menu li {
+  font-size: 1.8rem;
+}
+
+.bottom-menu a {
+  color: #1a2536;
+  transition: color 0.2s;
+}
+
+.bottom-menu a.active,
+.bottom-menu a:hover {
+  color: #007bff;
+}
+
+/* Overlay for closing */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.25);
+  z-index: 118;
+}

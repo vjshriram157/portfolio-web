@@ -1,0 +1,74 @@
+.aboutme-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background: #252930;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.aboutme-image-card {
+  background: #20232a;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.45);
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 260px;
+  max-height: 350px;
+  margin-right: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.aboutme-image-card:hover {
+  box-shadow: 0 6px 48px rgba(156, 63, 229, 0.8);
+}
+
+.aboutme-image {
+  width: 220px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #1a1f23;
+}
+
+.aboutme-content {
+  max-width: 750px;
+  color: #d3dae6;
+}
+
+.aboutme-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 1.4rem;
+  text-align: left;
+}
+
+.aboutme-title span {
+  color: #b78af5;
+}
+
+.aboutme-content p {
+  font-size: 1.16rem;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+  color: #d3dae6;
+}
+
+@media (max-width: 900px) {
+  .aboutme-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .aboutme-image-card {
+    margin-right: 0;
+    max-width: 75vw;
+  }
+}

@@ -1,0 +1,39 @@
+.skill-card {
+  background: #23273a;
+  border: 2px solid #9162ff;     /* Blue border, same as certifications */
+  border-radius: 18px;
+  box-shadow: 0 4px 40px rgba(71, 141, 255, 0.10);
+  padding: 1.5rem 1rem 1.2rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.18s;
+  text-align: left;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Hover effect */
+.skill-card:hover {
+  border-color: #9e6aff; /* Optional: or use a lighter blue, or keep #478dff for both */
+  box-shadow: 0 12px 40px rgba(71, 141, 255, 0.22);
+  transform: translateY(-6px) scale(1.03);
+  z-index: 1;
+  cursor: pointer;
+}
+.skills-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;    /* Center align the heading */
+  margin-bottom: 2.6rem;
+  letter-spacing: 1.2px;
+  color: #fff;           /* Default color, overridden by spans */
+}
+
+.heading-white {
+  color: #fff;
+}
+
+.heading-purple {
+  color: #bb86fc;
+}

@@ -1,0 +1,99 @@
+.projects-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1.2px;
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.heading-white {
+  color: #fff;
+}
+
+.heading-purple {
+  color: #bb86fc;
+}
+
+.projects-subtitle {
+  font-family: 'Dancing Script', cursive;
+  color: #bb86fc;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding-left: 1rem;
+}
+
+.project-card {
+  background: #23273a;
+  border: 2px solid #bb86fc;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px rgba(187,134,252,0.12);
+  padding: 2rem 1.5rem;
+  min-width: 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.18s, transform 0.12s;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 40px rgba(187, 134, 252, 0.22);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.project-title {
+  color: #bb86fc;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.project-desc {
+  color: #bec7d8;
+  font-size: 1.05rem;
+  margin-bottom: 1.3em;
+}
+
+.project-btn {
+  display: inline-block;
+  border: 2px solid #bb86fc;
+  background: transparent;
+  color: #bb86fc;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 30px;
+  padding: 0.7em 2em;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.18s, color 0.18s, border-color 0.15s;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  background: #bb86fc;
+  color: #23273a;
+  border-color: #bb86fc;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects-list {
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 0;
+  }
+  .projects-heading, .projects-subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,87 @@
+.certification-section {
+  max-width: 1200px;
+  margin: 48px auto 3rem auto;
+  padding: 2rem 1rem;
+  color: #e0e6eb;
+  text-align: center;
+}
+
+.certification-section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 2.6rem;
+  letter-spacing: 1.2px;
+  color: #478dff; /* Blue heading */
+}
+
+.certification-section .highlight {
+  color: #478dff; /* Blue highlight */
+}
+
+.certification-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-card {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 350px;
+  background: #000000;
+  border: 2px solid #478dff; /* Blue border */
+  border-radius: 22px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.18s, transform 0.12s;
+}
+
+.info-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22); /* Blue hover shadow */
+  transform: translateY(-4px) scale(1.03);
+}
+
+.info-label {
+  color: #000000; /* Blue card title */
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.info-value {
+  color: #fff;  /* White for institution/issuer */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.info-detail {
+  color: #000000;  /* Muted for details */
+  font-size: 0.97rem;
+  margin-bottom: 0.6rem;
+}
+
+.info-year {
+  color: #478dff; /* Blue year */
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .certification-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .info-card {
+    width: 96%;
+  }
+}
